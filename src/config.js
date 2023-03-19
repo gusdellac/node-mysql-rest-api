@@ -1,7 +1,11 @@
-import {config} from "dotenv";
+//Modulo dotenv leera nuestras variables de entorno
 
-config();
+import {config} from "dotenv"; //importamos funcion config() del modulo dotenv
 
+config(); //ejecutamos funcion config()
+
+
+//Variables de entorno. Exportamos todas las const
 export const PORT = process.env.PORT || 3000;
 export const DB_USER = process.env.DB_USER || "root";
 export const DB_PASSWORD = process.env.DB_PASSWORD || "2014gustavo";
